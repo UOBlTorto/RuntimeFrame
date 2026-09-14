@@ -1,0 +1,5 @@
+node_modules
+app/public/dist
+config.local.js
+metrics-out
+bench/results/*.json

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>Elpis 构建基准 · 示例报告（占位数据）</title>
+<style>
+  :root{color-scheme:dark}
+  body{margin:0;padding:32px;background:#0f1115;color:#e6e8ee;font:14px/1.7 -apple-system,"Segoe UI",system-ui,sans-serif}
+  h1{font-size:22px;margin:0 0 6px}
+  h2{font-size:15px;margin:30px 0 12px;color:#9fb4d8}
+  .meta{color:#8b93a7;font-size:12.5px;margin-bottom:6px}
+  .row{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:center;margin:6px 0}
+  .row b{font-weight:500;color:#c7cede;font-size:12.5px}
+  .bar{position:relative;background:#181c24;border-radius:6px;height:22px}
+  .bar span{display:block;height:100%;border-radius:6px;opacity:.85}
+  .bar em{position:absolute;right:8px;top:0;font-style:normal;font-size:12px;line-height:22px}
+  table{border-collapse:collapse;width:100%;margin-top:8px;font-size:13px}
+  th,td{border-bottom:1px solid #222833;padding:8px 10px;text-align:left}
+  th{color:#8b93a7;font-weight:500}
+  code{background:#181c24;padding:1px 5px;border-radius:4px}
+</style></head>
+<body>
+  <h1>Elpis 构建基准 · 示例报告（占位数据）</h1>
+  <div class="meta">2026-09-14T01:17:16.409Z · Node v24.19.0 · 示例 CPU × 16 核 · 仓库 sample</div>
+  <div class="meta">冷构建 = 每变体 3 个全新进程 + cache:false，取中位数；增量 = 触碰 <code>app/pages/dashboard/dashboard.vue</code>（模式 content）到编译 done</div>
+  <h2>冷构建耗时（中位数）</h2>
+  <div class="row"><b>prod.before</b><div class="bar"><span style="width:100%;background:#4f8cff"></span><em>27.23 s</em></div></div><div class="row"><b>prod.after</b><div class="bar"><span style="width:66.9%;background:#4f8cff"></span><em>18.21 s</em></div></div><div class="row"><b>prod.nothreads</b><div class="bar"><span style="width:87.31%;background:#4f8cff"></span><em>23.77 s</em></div></div><div class="row"><b>dev.nohmr</b><div class="bar"><span style="width:30.52%;background:#4f8cff"></span><em>8.31 s</em></div></div><div class="row"><b>dev.hmr</b><div class="bar"><span style="width:31.26%;background:#4f8cff"></span><em>8.51 s</em></div></div>
+  <h2>产物 gzip 体积（中位数）</h2>
+  <div class="row"><b>prod.before</b><div class="bar"><span style="width:58.41%;background:#22c55e"></span><em>1.42 MB</em></div></div><div class="row"><b>prod.after</b><div class="bar"><span style="width:35.23%;background:#22c55e"></span><em>878.6 KB</em></div></div><div class="row"><b>prod.nothreads</b><div class="bar"><span style="width:35.23%;background:#22c55e"></span><em>878.6 KB</em></div></div><div class="row"><b>dev.nohmr</b><div class="bar"><span style="width:99.04%;background:#22c55e"></span><em>2.41 MB</em></div></div><div class="row"><b>dev.hmr</b><div class="bar"><span style="width:100%;background:#22c55e"></span><em>2.44 MB</em></div></div>
+  <h2>总表</h2>
+  <table><thead><tr><th>变体</th><th>编译耗时</th><th>raw</th><th>gzip</th><th>对比对象</th></tr></thead><tbody><tr><td>prod.before</td><td>27.23 s</td><td>5.37 MB</td><td>1.42 MB</td><td>基线</td></tr><tr><td>prod.after</td><td>18.21 s</td><td>3.13 MB</td><td>878.6 KB</td><td>prod.before</td></tr><tr><td>prod.nothreads</td><td>23.77 s</td><td>3.13 MB</td><td>878.6 KB</td><td>prod.after</td></tr><tr><td>dev.nohmr</td><td>8.31 s</td><td>11.84 MB</td><td>2.41 MB</td><td>基线</td></tr><tr><td>dev.hmr</td><td>8.51 s</td><td>11.95 MB</td><td>2.44 MB</td><td>dev.nohmr</td></tr></tbody></table>
+  <h2>增量重建</h2>
+  <table><thead><tr><th>变体</th><th>首次构建</th><th>重建中位</th><th>重传 raw</th><th>重传 gzip</th></tr></thead><tbody><tr><td>prod.before</td><td>26.8 s</td><td>1.5 s</td><td>3.9 MB</td><td>1.05 MB</td></tr><tr><td>prod.after</td><td>18.4 s</td><td>1.17 s</td><td>563 KB</td><td>153 KB</td></tr><tr><td>prod.nothreads</td><td>23.6 s</td><td>1.53 s</td><td>563 KB</td><td>153 KB</td></tr><tr><td>dev.nohmr</td><td>8.2 s</td><td>433 ms</td><td>3.4 MB</td><td>717 KB</td></tr><tr><td>dev.hmr</td><td>8.4 s</td><td>440 ms</td><td>3.43 MB</td><td>725 KB</td></tr></tbody></table>
+</body></html>

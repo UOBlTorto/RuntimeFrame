@@ -1,0 +1,6 @@
+{
+  "name": "stub-elpis",
+  "version": "0.0.0",
+  "private": true,
+  "description": "自检用的假仓库：只有一个桩 webpack，用来端到端验证 bench 工具链，不代表任何真实测量"
+}

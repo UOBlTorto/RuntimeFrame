@@ -1,0 +1,1354 @@
+{
+  "meta": {
+    "label": "Elpis 构建基准 · 示例报告（占位数据）",
+    "generatedAt": "2026-09-14T01:17:16.409Z",
+    "elpisRoot": "D:\\work\\vscode4w\\Elpis",
+    "elpisHead": "sample",
+    "node": "v24.19.0",
+    "platform": "win32-x64",
+    "cpu": "示例 CPU",
+    "cpuCount": 16,
+    "totalMemGB": 32,
+    "coldRuns": 3,
+    "touches": 5,
+    "touchFile": "app/pages/dashboard/dashboard.vue",
+    "disclaimer": "本文件是排版示例，所有数字均为占位值，请用 run.cjs 跑出真实数据"
+  },
+  "variants": {
+    "prod.before": {
+      "id": "prod.before",
+      "title": "生产构建 · 优化前（只有基础配置：无拆分、无 CSS 提取、无压缩、单线程）",
+      "baseline": null,
+      "cold": [
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 27704.104195765332,
+          "wallMs": 29098.5517450001,
+          "hash": "sample1",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 4089856,
+                "gzip": 1100800
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 838656,
+                "gzip": 220160
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 650240,
+                "gzip": 157696
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 5625856,
+              "gzip": 1491558.4
+            }
+          }
+        },
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 25175.471537602076,
+          "wallMs": 28868.471223395783,
+          "hash": "sample2",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 4089856,
+                "gzip": 1100800
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 838656,
+                "gzip": 220160
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 650240,
+                "gzip": 157696
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 5625856,
+              "gzip": 1491558.4
+            }
+          }
+        },
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 27226.226572043553,
+          "wallMs": 30540.235013169946,
+          "hash": "sample3",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 4089856,
+                "gzip": 1100800
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 838656,
+                "gzip": 220160
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 650240,
+                "gzip": 157696
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 5625856,
+              "gzip": 1491558.4
+            }
+          }
+        }
+      ],
+      "watch": {
+        "variant": null,
+        "mode": "watch",
+        "touchFile": "app/pages/dashboard/dashboard.vue",
+        "initial": {
+          "ok": true,
+          "webpackMs": 26800,
+          "emitted": {
+            "assets": [],
+            "totals": {
+              "raw": 0,
+              "gzip": 0
+            }
+          }
+        },
+        "rebuilds": [
+          {
+            "index": 0,
+            "ok": true,
+            "touchToDoneMs": 1496.572487586782,
+            "webpackMs": 1346.2412877038696,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 4089856,
+            "gzip": 1100800
+          },
+          {
+            "index": 1,
+            "ok": true,
+            "touchToDoneMs": 1403.461342683695,
+            "webpackMs": 1297.4070409306341,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 4089856,
+            "gzip": 1100800
+          },
+          {
+            "index": 2,
+            "ok": true,
+            "touchToDoneMs": 1521.7999114205852,
+            "webpackMs": 1360.7076856309905,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 4089856,
+            "gzip": 1100800
+          },
+          {
+            "index": 3,
+            "ok": true,
+            "touchToDoneMs": 1495.8236530042996,
+            "webpackMs": 1296.4125276286213,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 4089856,
+            "gzip": 1100800
+          },
+          {
+            "index": 4,
+            "ok": true,
+            "touchToDoneMs": 1441.5633788118157,
+            "webpackMs": 1323.816305765478,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 4089856,
+            "gzip": 1100800
+          }
+        ],
+        "notes": [
+          "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+        ]
+      },
+      "profile": null
+    },
+    "prod.after": {
+      "id": "prod.after",
+      "title": "生产构建 · 现状（splitChunks + runtimeChunk + CSS 提取/压缩 + Terser + Happypack 多线程）",
+      "baseline": "prod.before",
+      "cold": [
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 18214.136027507484,
+          "wallMs": 21302.771720233275,
+          "hash": "sample4",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/vendor.bundle.js",
+                "raw": 1677312,
+                "gzip": 460800
+              },
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 576512,
+                "gzip": 156672
+              },
+              {
+                "name": "js/common.bundle.js",
+                "raw": 440320,
+                "gzip": 114688
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 251904,
+                "gzip": 73728
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 199680,
+                "gzip": 57344
+              },
+              {
+                "name": "js/runtime.bundle.js",
+                "raw": 31744,
+                "gzip": 8192
+              },
+              {
+                "name": "css/dashboard.bundle.css",
+                "raw": 62464,
+                "gzip": 15360
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 3287040,
+              "gzip": 899686.4
+            }
+          }
+        },
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 17833.382667213853,
+          "wallMs": 20105.22380345479,
+          "hash": "sample5",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/vendor.bundle.js",
+                "raw": 1677312,
+                "gzip": 460800
+              },
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 576512,
+                "gzip": 156672
+              },
+              {
+                "name": "js/common.bundle.js",
+                "raw": 440320,
+                "gzip": 114688
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 251904,
+                "gzip": 73728
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 199680,
+                "gzip": 57344
+              },
+              {
+                "name": "js/runtime.bundle.js",
+                "raw": 31744,
+                "gzip": 8192
+              },
+              {
+                "name": "css/dashboard.bundle.css",
+                "raw": 62464,
+                "gzip": 15360
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 3287040,
+              "gzip": 899686.4
+            }
+          }
+        },
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 18888.625812388604,
+          "wallMs": 21829.858533289545,
+          "hash": "sample6",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/vendor.bundle.js",
+                "raw": 1677312,
+                "gzip": 460800
+              },
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 576512,
+                "gzip": 156672
+              },
+              {
+                "name": "js/common.bundle.js",
+                "raw": 440320,
+                "gzip": 114688
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 251904,
+                "gzip": 73728
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 199680,
+                "gzip": 57344
+              },
+              {
+                "name": "js/runtime.bundle.js",
+                "raw": 31744,
+                "gzip": 8192
+              },
+              {
+                "name": "css/dashboard.bundle.css",
+                "raw": 62464,
+                "gzip": 15360
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 3287040,
+              "gzip": 899686.4
+            }
+          }
+        }
+      ],
+      "watch": {
+        "variant": null,
+        "mode": "watch",
+        "touchFile": "app/pages/dashboard/dashboard.vue",
+        "initial": {
+          "ok": true,
+          "webpackMs": 18400,
+          "emitted": {
+            "assets": [],
+            "totals": {
+              "raw": 0,
+              "gzip": 0
+            }
+          }
+        },
+        "rebuilds": [
+          {
+            "index": 0,
+            "ok": true,
+            "touchToDoneMs": 1198.983418757376,
+            "webpackMs": 1043.9958819907085,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 576512,
+            "gzip": 156672
+          },
+          {
+            "index": 1,
+            "ok": true,
+            "touchToDoneMs": 1170.48191413295,
+            "webpackMs": 1061.5034042529571,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 576512,
+            "gzip": 156672
+          },
+          {
+            "index": 2,
+            "ok": true,
+            "touchToDoneMs": 1137.020143130896,
+            "webpackMs": 1008.9337245126416,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 576512,
+            "gzip": 156672
+          },
+          {
+            "index": 3,
+            "ok": true,
+            "touchToDoneMs": 1159.9954244341207,
+            "webpackMs": 1026.0943839466927,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 576512,
+            "gzip": 156672
+          },
+          {
+            "index": 4,
+            "ok": true,
+            "touchToDoneMs": 1179.4482269477303,
+            "webpackMs": 1053.5245494340058,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 576512,
+            "gzip": 156672
+          }
+        ],
+        "notes": [
+          "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+        ]
+      },
+      "profile": null
+    },
+    "prod.nothreads": {
+      "id": "prod.nothreads",
+      "title": "生产构建 · 现状但关闭所有并发（Happypack → 直接 loader，Terser parallel=false）",
+      "baseline": "prod.after",
+      "cold": [
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 22968.615285713604,
+          "wallMs": 26696.791603605234,
+          "hash": "sample7",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/vendor.bundle.js",
+                "raw": 1677312,
+                "gzip": 460800
+              },
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 576512,
+                "gzip": 156672
+              },
+              {
+                "name": "js/common.bundle.js",
+                "raw": 440320,
+                "gzip": 114688
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 251904,
+                "gzip": 73728
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 199680,
+                "gzip": 57344
+              },
+              {
+                "name": "js/runtime.bundle.js",
+                "raw": 31744,
+                "gzip": 8192
+              },
+              {
+                "name": "css/dashboard.bundle.css",
+                "raw": 62464,
+                "gzip": 15360
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 3287040,
+              "gzip": 899686.4
+            }
+          }
+        },
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 23770.525943514847,
+          "wallMs": 26606.789881769164,
+          "hash": "sample8",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/vendor.bundle.js",
+                "raw": 1677312,
+                "gzip": 460800
+              },
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 576512,
+                "gzip": 156672
+              },
+              {
+                "name": "js/common.bundle.js",
+                "raw": 440320,
+                "gzip": 114688
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 251904,
+                "gzip": 73728
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 199680,
+                "gzip": 57344
+              },
+              {
+                "name": "js/runtime.bundle.js",
+                "raw": 31744,
+                "gzip": 8192
+              },
+              {
+                "name": "css/dashboard.bundle.css",
+                "raw": 62464,
+                "gzip": 15360
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 3287040,
+              "gzip": 899686.4
+            }
+          }
+        },
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 23875.445144297206,
+          "wallMs": 27076.176046279605,
+          "hash": "sample9",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/vendor.bundle.js",
+                "raw": 1677312,
+                "gzip": 460800
+              },
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 576512,
+                "gzip": 156672
+              },
+              {
+                "name": "js/common.bundle.js",
+                "raw": 440320,
+                "gzip": 114688
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 251904,
+                "gzip": 73728
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 199680,
+                "gzip": 57344
+              },
+              {
+                "name": "js/runtime.bundle.js",
+                "raw": 31744,
+                "gzip": 8192
+              },
+              {
+                "name": "css/dashboard.bundle.css",
+                "raw": 62464,
+                "gzip": 15360
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 3287040,
+              "gzip": 899686.4
+            }
+          }
+        }
+      ],
+      "watch": {
+        "variant": null,
+        "mode": "watch",
+        "touchFile": "app/pages/dashboard/dashboard.vue",
+        "initial": {
+          "ok": true,
+          "webpackMs": 23600,
+          "emitted": {
+            "assets": [],
+            "totals": {
+              "raw": 0,
+              "gzip": 0
+            }
+          }
+        },
+        "rebuilds": [
+          {
+            "index": 0,
+            "ok": true,
+            "touchToDoneMs": 1507.5426149752457,
+            "webpackMs": 1433.8720182315824,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 576512,
+            "gzip": 156672
+          },
+          {
+            "index": 1,
+            "ok": true,
+            "touchToDoneMs": 1474.490874462179,
+            "webpackMs": 1425.5337804457522,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 576512,
+            "gzip": 156672
+          },
+          {
+            "index": 2,
+            "ok": true,
+            "touchToDoneMs": 1531.53994889959,
+            "webpackMs": 1363.9338427458235,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 576512,
+            "gzip": 156672
+          },
+          {
+            "index": 3,
+            "ok": true,
+            "touchToDoneMs": 1593.191131368425,
+            "webpackMs": 1404.6904659370803,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 576512,
+            "gzip": 156672
+          },
+          {
+            "index": 4,
+            "ok": true,
+            "touchToDoneMs": 1583.9264227175024,
+            "webpackMs": 1381.2222847610947,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 576512,
+            "gzip": 156672
+          }
+        ],
+        "notes": [
+          "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+        ]
+      },
+      "profile": null
+    },
+    "dev.nohmr": {
+      "id": "dev.nohmr",
+      "title": "开发态 · 同一份配置关掉 HMR（无 client 注入、无 HotModuleReplacementPlugin）",
+      "baseline": null,
+      "cold": [
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 8509.312103613629,
+          "wallMs": 9562.096673671156,
+          "hash": "sample10",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/vendor.bundle.js",
+                "raw": 5347328,
+                "gzip": 1069056
+              },
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 3565568,
+                "gzip": 734208
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 1677312,
+                "gzip": 346112
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 1782784,
+                "gzip": 366592
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 12420096,
+              "gzip": 2528870.4
+            }
+          }
+        },
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 8308.13084107748,
+          "wallMs": 9582.186163113583,
+          "hash": "sample11",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/vendor.bundle.js",
+                "raw": 5347328,
+                "gzip": 1069056
+              },
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 3565568,
+                "gzip": 734208
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 1677312,
+                "gzip": 346112
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 1782784,
+                "gzip": 366592
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 12420096,
+              "gzip": 2528870.4
+            }
+          }
+        },
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 8086.885045117058,
+          "wallMs": 9596.778578488433,
+          "hash": "sample12",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/vendor.bundle.js",
+                "raw": 5347328,
+                "gzip": 1069056
+              },
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 3565568,
+                "gzip": 734208
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 1677312,
+                "gzip": 346112
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 1782784,
+                "gzip": 366592
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 12420096,
+              "gzip": 2528870.4
+            }
+          }
+        }
+      ],
+      "watch": {
+        "variant": null,
+        "mode": "watch",
+        "touchFile": "app/pages/dashboard/dashboard.vue",
+        "initial": {
+          "ok": true,
+          "webpackMs": 8200,
+          "emitted": {
+            "assets": [],
+            "totals": {
+              "raw": 0,
+              "gzip": 0
+            }
+          }
+        },
+        "rebuilds": [
+          {
+            "index": 0,
+            "ok": true,
+            "touchToDoneMs": 440.41168332091763,
+            "webpackMs": 389.3404914247699,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 3565568,
+            "gzip": 734208
+          },
+          {
+            "index": 1,
+            "ok": true,
+            "touchToDoneMs": 444.7859685934003,
+            "webpackMs": 374.9015858309926,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 3565568,
+            "gzip": 734208
+          },
+          {
+            "index": 2,
+            "ok": true,
+            "touchToDoneMs": 422.6338282997429,
+            "webpackMs": 373.80728959409987,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 3565568,
+            "gzip": 734208
+          },
+          {
+            "index": 3,
+            "ok": true,
+            "touchToDoneMs": 432.6005460275221,
+            "webpackMs": 381.10953351178034,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 3565568,
+            "gzip": 734208
+          },
+          {
+            "index": 4,
+            "ok": true,
+            "touchToDoneMs": 416.5573175899917,
+            "webpackMs": 373.8658403661655,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 3565568,
+            "gzip": 734208
+          }
+        ],
+        "notes": [
+          "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+        ]
+      },
+      "profile": null
+    },
+    "dev.hmr": {
+      "id": "dev.hmr",
+      "title": "开发态 · 自研 dev server（dev-middleware + hot-middleware + HotModuleReplacementPlugin）",
+      "baseline": "dev.nohmr",
+      "cold": [
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 8732.755451549194,
+          "wallMs": 9953.101860614843,
+          "hash": "sample13",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/vendor.bundle.js",
+                "raw": 5347328,
+                "gzip": 1069056
+              },
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 3601408,
+                "gzip": 742400
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 1713152,
+                "gzip": 354304
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 1818624,
+                "gzip": 374784
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 12527616,
+              "gzip": 2553446.4
+            }
+          }
+        },
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 8509.840728240379,
+          "wallMs": 9732.609801381186,
+          "hash": "sample14",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/vendor.bundle.js",
+                "raw": 5347328,
+                "gzip": 1069056
+              },
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 3601408,
+                "gzip": 742400
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 1713152,
+                "gzip": 354304
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 1818624,
+                "gzip": 374784
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 12527616,
+              "gzip": 2553446.4
+            }
+          }
+        },
+        {
+          "variant": null,
+          "mode": "cold",
+          "ok": true,
+          "webpackMs": 8460.435155807136,
+          "wallMs": 9995.56059950747,
+          "hash": "sample15",
+          "errors": [],
+          "warnings": 2,
+          "notes": [
+            "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+          ],
+          "emitted": {
+            "assets": [
+              {
+                "name": "js/vendor.bundle.js",
+                "raw": 5347328,
+                "gzip": 1069056
+              },
+              {
+                "name": "js/dashboard.bundle.js",
+                "raw": 3601408,
+                "gzip": 742400
+              },
+              {
+                "name": "js/page1.bundle.js",
+                "raw": 1713152,
+                "gzip": 354304
+              },
+              {
+                "name": "js/project-list.bundle.js",
+                "raw": 1818624,
+                "gzip": 374784
+              },
+              {
+                "name": "dashboard.html",
+                "raw": 16384,
+                "gzip": 4505.6
+              },
+              {
+                "name": "page1.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              },
+              {
+                "name": "project-list.html",
+                "raw": 15360,
+                "gzip": 4198.4
+              }
+            ],
+            "totals": {
+              "raw": 12527616,
+              "gzip": 2553446.4
+            }
+          }
+        }
+      ],
+      "watch": {
+        "variant": null,
+        "mode": "watch",
+        "touchFile": "app/pages/dashboard/dashboard.vue",
+        "initial": {
+          "ok": true,
+          "webpackMs": 8400,
+          "emitted": {
+            "assets": [],
+            "totals": {
+              "raw": 0,
+              "gzip": 0
+            }
+          }
+        },
+        "rebuilds": [
+          {
+            "index": 0,
+            "ok": true,
+            "touchToDoneMs": 465.74320821375153,
+            "webpackMs": 396.3954976553065,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 3601408,
+            "gzip": 742400
+          },
+          {
+            "index": 1,
+            "ok": true,
+            "touchToDoneMs": 447.8627567018484,
+            "webpackMs": 390.96346931535186,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 3601408,
+            "gzip": 742400
+          },
+          {
+            "index": 2,
+            "ok": true,
+            "touchToDoneMs": 436.65211707064884,
+            "webpackMs": 390.75699799962644,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 3601408,
+            "gzip": 742400
+          },
+          {
+            "index": 3,
+            "ok": true,
+            "touchToDoneMs": 440.4394418392294,
+            "webpackMs": 387.2165564885217,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 3601408,
+            "gzip": 742400
+          },
+          {
+            "index": 4,
+            "ok": true,
+            "touchToDoneMs": 434.4038547948354,
+            "webpackMs": 416.6633456590482,
+            "changed": [
+              "js/dashboard.bundle.js"
+            ],
+            "raw": 3601408,
+            "gzip": 742400
+          }
+        ],
+        "notes": [
+          "示例数据：由 fixtures/make-sample.cjs 生成，不是实测结果"
+        ]
+      },
+      "profile": null
+    }
+  }
+}
