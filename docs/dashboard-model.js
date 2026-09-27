@@ -74,8 +74,8 @@
                   ...//other Key
                 },
                 required:[],//标记哪些字段必填 
-
-                tableConfig: {
+            },
+            tableConfig: {
                   headerButtons: [
                     {
                       label: '',//按钮名称
@@ -121,7 +121,6 @@
                     saveBtnText:'',
                   }
                 }
-            },
         }
     },...]
 }

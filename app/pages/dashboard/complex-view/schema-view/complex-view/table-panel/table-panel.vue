@@ -56,8 +56,8 @@ function operationHandler({btnConfig,rowData}){
 	}
 }
 function removeData({btnConfig,rowData}) {
-	if(!btnConfig?.params){ return ;}
-	const {params} = btnConfig;
+	if(!btnConfig.eventOption?.params){ return ;}
+	const {params} = btnConfig.eventOption;
 	const removeKey = Object.keys(params)[0];
 	let removeVal = params[removeKey];
 	const removeValList = removeVal.split('::');

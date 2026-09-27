@@ -131,7 +131,8 @@ module.exports={
           },
         },
         required:['product_name'],
-        tableConfig:{
+      },
+      tableConfig:{
           headerButtons:[
             {
               label:'新增商品',
@@ -184,7 +185,6 @@ module.exports={
             title:'商品详情'
           }
         }
-      }
     }
   },{
     key:'order',
