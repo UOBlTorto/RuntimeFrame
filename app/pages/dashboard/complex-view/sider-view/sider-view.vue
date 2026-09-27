@@ -13,7 +13,7 @@
 					></sub-menu>
 					<el-menu-item
 						v-else
-						:key="item.key"
+						:index="item.key"
 					>{{item.name}}</el-menu-item>
 				</template>
 			</el-menu>
