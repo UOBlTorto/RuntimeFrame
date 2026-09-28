@@ -42,7 +42,7 @@ export const useSchema = ()=>{
 				searchSchema.value = dtoSearchSchema;
 				searchConfig.value = configSchema.searchConfig
 				// ============================构造 动态组件 相关========================
-				const { componentConfig } = configSchema
+				const { componentConfig } = schemaConfig
 				if(componentConfig&&Object.keys(componentConfig).length>0){
 					let dtoComponent = {};
 					for(const compKey in componentConfig){
